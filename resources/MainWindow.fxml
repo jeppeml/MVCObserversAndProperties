@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.javahandson.MainController">
+<Label fx:id="lbl" layoutX="474.0" layoutY="99.0">Hello</Label>
+<Button layoutX="467.0" layoutY="346.0" onAction="#clickBtn" text="Load data from DB">Click me!</Button>
+   <Button fx:id="btnDelete" layoutX="502.0" layoutY="306.0" mnemonicParsing="false" onAction="#clickDelete" text="Delete" />
+   <Button fx:id="btnUpdate" layoutX="502.0" layoutY="260.0" mnemonicParsing="false" onAction="#clickUpdate" text="Update" />
+   <TextField fx:id="edtUpdate" layoutX="473.0" layoutY="223.0" prefHeight="26.0" prefWidth="110.0" />
+   <Button fx:id="btnInsert" layoutX="502.0" layoutY="187.0" mnemonicParsing="false" onAction="#clickInsert" text="Insert" />
+   <TextField fx:id="edtInsert" layoutX="479.0" layoutY="153.0" prefHeight="26.0" prefWidth="110.0" />
+   <TableView fx:id="tblPersons" layoutX="14.0" layoutY="23.0" prefHeight="363.0" prefWidth="443.0">
+     <columns>
+       <TableColumn fx:id="colName" prefWidth="442.40001220703124" text="Name" />
+     </columns>
+   </TableView>
+</AnchorPane>
